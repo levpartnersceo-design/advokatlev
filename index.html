@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advokat Lev</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advokát Lev - Energetické právo & M&A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;font-family:'Inter', sans-serif;background:#f8f9fa;color:#111;line-height:1.6;}
+    header {padding:2rem 1rem;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+    .container {max-width:1200px;margin:0 auto;padding:0 1rem;}
+    nav ul {list-style:none;display:flex;gap:1rem;padding:0;margin:0;}
+    nav a {color:#111;text-decoration:none;font-weight:500;}
+    nav a:hover {text-decoration:underline;}
+    .hero {padding:4rem 1rem;text-align:center;background:#fff;}
+    .hero h1 {font-size:3rem;margin-bottom:1rem;font-weight:700;}
+    .hero p {font-size:1.25rem;margin-bottom:2rem;color:#555;}
+    .btn {display:inline-block;padding:0.75rem 1.5rem;background:#111;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;}
+    .btn:hover {background:#333;}
+    .section-title {font-size:2rem;margin:3rem 0 1.5rem;text-align:center;font-weight:600;}
+    .projects, .services {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;padding:1rem;}
+    .project-card, .service-card {background:#fff;border-radius:8px;padding:1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.1);}  
+    footer {padding:2rem 1rem;background:#111;color:#fff;text-align:center;margin-top:3rem;}
+  </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <main class="container mx-auto px-4 py-32 text-center">
-    <h1 class="text-4xl font-bold mb-4">Advokát Lev</h1>
-    <p class="text-lg mb-8">Stránka se připravuje. Brzy se vraťte.</p>
-  </main>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#projekty">Projekty</a></li>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#o-nas">O nás</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>Precizní právní řešení v M&A a energetice</h1>
+    <p>Specializovaná advokátní kancelář v centru Prahy – M&A, energetické právo, compliance a spory.</p>
+    <a class="btn" href="#kontakt">Kontaktujte nás</a>
+  </section>
+  <h2 class="section-title" id="projekty">Vybrané projekty</h2>
+  <div class="container projects">
+    <div class="project-card"><h3>Carve‑out skupiny</h3><p>Komplexní restrukturalizace a prodej části obchodní skupiny.</p></div>
+    <div class="project-card"><h3>Prodej FVE portfolia</h3><p>Převod portfolia solárních elektráren v hodnotě 2&nbsp;mld.&nbsp;Kč.</p></div>
+    <div class="project-card"><h3>Sporná agenda</h3><p>Zastupování klienta v obtížném soudním sporu s hodnotou sporu 500&nbsp;mil.&nbsp;Kč.</p></div>
+    <div class="project-card"><h3>Compliance program</h3><p>Návrh a implementace programu compliance pro výrobní podnik.</p></div>
+    <div class="project-card"><h3>M&A transakce</h3><p>Komplexní M&A transakce zahrnující zahraniční investory.</p></div>
+    <div class="project-card"><h3>Greenfield projekt</h3><p>Právní podpora při výstavbě nové výrobní haly.</p></div>
+  </div>
+  <h2 class="section-title" id="sluzby">Služby</h2>
+  <div class="container services">
+    <div class="service-card"><h3>M&A poradenství</h3><p>Strukturování transakcí, due diligence a smluvní dokumentace.</p></div>
+    <div class="service-card"><h3>Energetické právo</h3><p>Regulace, projekty obnovitelných zdrojů a obchodování s energiemi.</p></div>
+    <div class="service-card"><h3>Spory & Arbitrace</h3><p>Zastupování v civilních i arbitražních sporech, mediace.</p></div>
+    <div class="service-card"><h3>Compliance</h3><p>Vnitřní předpisy, whistleblowing, školení.</p></div>
+  </div>
+  <h2 class="section-title" id="o-nas">O nás</h2>
+  <div class="container">
+    <p>Jsme nezávislá advokátní kancelář zaměřená na M&A, energetické právo a spory. Poskytujeme špičkové právní služby s důrazem na osobní přístup a dlouhodobé partnerství.</p>
+  </div>
+  <h2 class="section-title" id="kontakt">Kontakt</h2>
+  <div class="container">
+    <p>Email: <a href="mailto:hello@advokatlev.cz">hello@advokatlev.cz</a></p>
+    <p>Telefon: <a href="tel:+420601030399">+420&nbsp;601&nbsp;030&nbsp;399</a></p>
+    <p>Adresa: Havlíčkova&nbsp;1029/3A, 110&nbsp;00&nbsp;Praha&nbsp;1</p>
+    <form action="mailto:hello@advokatlev.cz" method="post" enctype="text/plain">
+      <p><input type="text" name="name" placeholder="Vaše jméno" required style="padding:0.5rem;width:100%;margin-bottom:1rem;"></p>
+      <p><input type="email" name="email" placeholder="Váš e-mail" required style="padding:0.5rem;width:100%;margin-bottom:1rem;"></p>
+      <p><textarea name="message" placeholder="Vaše zpráva" rows="4" required style="padding:0.5rem;width:100%;margin-bottom:1rem;"></textarea></p>
+      <p><button class="btn" type="submit">Odeslat</button></p>
+    </form>
+  </div>
+  <footer>
+    &copy; 2025 Advokát Lev – všechna práva vyhrazena.
+  </footer>
 </body>
 </html>
